@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="FloAssistant.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FloAssistant"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaElement x:Name="media" AutoPlay="False" />
+        <MediaElement x:Name="radioMediaElement" AutoPlay="False" />
+        <TextBlock x:Name="discardedTextBlock" Margin="0,10,0,0" TextWrapping="WrapWholeWords" Visibility="Collapsed" Foreground="Red" />
+        <TextBox x:FieldModifier="public" x:Name="dictationTextBox" Margin="0,200,0,0" IsReadOnly="True" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="120" VerticalAlignment="Top"/>
+        <TextBox x:Name="dictationTextBox1" Margin="0,400,0,0" IsReadOnly="True" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="120" VerticalAlignment="Top" />
+        <TextBox x:Name="dictationTextBox2" Margin="0,600,0,0" IsReadOnly="True" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="120" VerticalAlignment="Top"/>
+        <Button Content="Relancer la reconnaissance vocale" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top" Height="69" Width="205" Click="ContinuousRecognize_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,1 @@
+C:\Users\Florent\source\repos\FloAssistant\FloAssistant\FloAssistant.csproj;arm
